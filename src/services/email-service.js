@@ -8,9 +8,9 @@ const sendBasicEmail = async(mailFrom, mailTo, mailSubject, mailBody) =>{
         subject: mailSubject,
         text: mailBody
      })
+     console.log(response);
     }catch(error){
-        console.log("something went wrong in email-service")
-        throw error
+        console.log(error)
     }
 }
 
